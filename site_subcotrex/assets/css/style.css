@@ -416,11 +416,7 @@ body {
 .footer__address p a {
   color: #EFEFEF;
 }
-.footer__social {
-  display: flex;
-  font-size: 0;
-  justify-content: flex-end;
-}
+
 @media (max-width: 1100px) {
   .footer {
     padding: 30px 25px;
@@ -451,15 +447,25 @@ body {
   font-size: 14px;
 }
 
+
+
 .social__link {
-  margin: 0 7.5px;
-  transition: all 0.1s ease 0s;
+  display: inline-block;
+  margin: 0 10px;
+  text-align: left;
+  line-height: 1; 
+  transition: transform 0.2s ease;
 }
+
+.footer__icon_soc .social__link {
+  display: inline-block;
+  margin: 0 10px;
+  line-height: 0;
+  text-align: center;
+}
+
 .social__link:hover {
   transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  transition: all 0.2s ease 0s;
 }
 
 /* Slider */
@@ -830,7 +836,7 @@ body {
 .studio__block {
   text-align: center;
   padding: 0 0 1.42em 2.14em;
-/  border-left: 1px solid #dadada;
+  border-left: 1px solid #dadada;
 }
 @media (max-width: 1100px) {
   .studio__block {
